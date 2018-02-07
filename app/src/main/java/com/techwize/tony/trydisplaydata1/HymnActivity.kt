@@ -4,12 +4,15 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 
 import kotlinx.android.synthetic.main.activity_hymn.*
 
 class HymnActivity : AppCompatActivity() {
+//    private val TAG = "......GBENGA........"
+    private val TAG = LoginActivity::class.java.simpleName
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,6 +38,12 @@ class HymnActivity : AppCompatActivity() {
         if (item.itemId == R.id.action_login){
             val intent = Intent(this,LoginActivity::class.java)
             startActivity(intent)
+            Log.d(TAG, "Menu item action_login was selected")
+        }
+        if (item.itemId == R.id.action_settings){
+            val intent = Intent(this,LoginActivity::class.java)
+//            startActivity(intent)
+            Log.d(TAG, "Menu item action_settings was selected")
         }
         return when (item.itemId) {
             R.id.action_settings -> true

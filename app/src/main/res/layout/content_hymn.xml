@@ -45,13 +45,6 @@
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="62dp" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/textView"
-            android:layout_toEndOf="@id/iv_introImage"
-            android:text="Press Here"/>
-
 
     </RelativeLayout>
 
